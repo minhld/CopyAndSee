@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	
+    <dimen name="main_popup_padding">10dp</dimen>
+    <dimen name="main_popup_inner_padding">10dp</dimen>
+    
+    <dimen name="text_search_size">15sp</dimen>
+    <dimen name="text_error_size">16sp</dimen>
+    
+    <dimen name="word_suggest_height">20dp</dimen>
+</resources>

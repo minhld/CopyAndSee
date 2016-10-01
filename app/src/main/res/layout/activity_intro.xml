@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	
+    <com.minhld.copynsee.components.CircularImageView 
+    	xmlns:imgView="http://schemas.android.com/apk/res/com.minhld.copynsee"
+        android:id="@+id/introImg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="-100dp"
+        android:src="@drawable/ic_intro"
+        android:layout_centerInParent="true"
+        imgView:border_width="2dp"
+        imgView:shadow="true" />
+    
+    <com.minhld.copynsee.components.CircularProgressBar 
+        xmlns:progBar="http://schemas.android.com/apk/res/com.minhld.copynsee"
+        android:id="@+id/loadProg"
+        style="@style/Widget.ProgressBar.Holo.CircularProgressBar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+		android:layout_below="@+id/introImg"
+        android:layout_marginTop="30dp"
+        progBar:subtitleColor="@color/circular_progress_default_subtitle"
+        progBar:strokeWidth="6" 
+        android:visibility="gone" />    
+
+	<TextView 
+		android:id="@+id/statusTxt"
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:background="@null"
+		android:layout_centerInParent="true"
+		android:layout_below="@+id/introImg"
+		android:layout_marginTop="30dp"
+		android:gravity="center"
+		android:textSize="@dimen/text_error_size"
+		android:textColor="@color/text_error_color"
+		android:text="@string/text_download_failed"
+		android:visibility="gone"/>
+	    	
+</RelativeLayout>

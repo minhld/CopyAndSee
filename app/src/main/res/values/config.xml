@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="data_url">https://www.dropbox.com/s/wjhjsmy7fapdu87/dict.zip?raw=1</string>
+    <string name="data_file">dict.zip</string>
+    <string name="data_av_file">ev.db</string>
+    <string name="data_va_file">ve.db</string>
+    
+    <string name="asset_cns_folder">.cns</string>
+    <string name="asset_dict_db_folder">db</string>
+</resources>

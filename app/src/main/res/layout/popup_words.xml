@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/main_popup_padding"
+    android:paddingRight="@dimen/main_popup_padding"
+    android:background="@android:color/transparent">
+	
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        android:background="@drawable/main_curve_bg"
+        android:alpha="0.95"
+        android:padding="@dimen/main_popup_inner_padding">
+        
+        <AutoCompleteTextView 
+            android:id="@+id/searchText"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@drawable/text_curve_bg"
+            android:inputType="text"
+            android:textSize="@dimen/text_search_size"
+            android:hint="@string/text_search_hint"
+            android:textColor="@color/text_color"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="30dp" />
+                
+        <ImageView 
+            android:id="@+id/searchBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_search" 
+            android:contentDescription="@string/empty"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"/>
+        
+        <!--  
+        <ListView 
+            android:id="@+id/suggestList"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/searchText"
+            android:layout_marginTop="5px"
+            android:background="@drawable/text_curve_bg"/>
+        -->
+        
+        <TextView 
+            android:id="@+id/suggestText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/searchText"
+            android:layout_marginTop="5px"/>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>
